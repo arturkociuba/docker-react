@@ -7,6 +7,7 @@ script:
   - echo thats all folks
   - docker run local_docker-react npm run test -- --coverage
 deploy:
+  skip_cleanup: true
   provider: azure_web_apps
   verbose: true
   username: $AZURE_WA_USERNAME
