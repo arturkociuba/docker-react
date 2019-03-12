@@ -8,6 +8,7 @@ script:
   - docker run local_docker-react npm run test -- --coverage
 deploy:
   provider: azure_web_apps
+  verbose: true
   username: $AZURE_WA_USERNAME
   password: $AZURE_WA_PASSWORD
   site: dockerreact
